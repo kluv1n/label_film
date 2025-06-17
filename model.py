@@ -26,7 +26,7 @@ train_ds, val_ds = torch.utils.data.random_split(dataset, [train_size, val_size]
 train_loader = torch.utils.data.DataLoader(train_ds, batch_size = 32, shuffle = True)
 val_loader = torch.utils.data.DataLoader(val_ds, batch_size = 32)
 
-model = models.resnet101(pretrained = True)
+model = models.resnet18(pretrained = True)
 
 num_ftrs = model.fc.in_features
 model.fc = nn.Linear(num_ftrs, 2)
