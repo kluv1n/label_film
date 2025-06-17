@@ -35,4 +35,4 @@ non_intro_path = "frames/train_frames_all"
 flatten_image_structure(intro_path)
 flatten_image_structure(non_intro_path)
 
-print("✅ Готово: изображения перемещены, пустые папки удалены.")
+print("Готово")
